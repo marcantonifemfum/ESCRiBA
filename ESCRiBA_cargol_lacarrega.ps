@@ -1,0 +1,590 @@
+%!
+%#  `GNU GPL FemFum ESCRiBA v.#1.1´ el formen un conjunt d'algorismes per fer cal·ligrames: imatges generades tipogràficament
+%#
+%#  Aquesta versió d'ESCRiBA_cargol_lacarrega.ps deriva d'un experiment de gramàtica generativa %%UCarrion @BotCarrion
+%#  i amb l'impuls de la plataforma d'#ArtistesDelaRepública ens afegim a l'acció proposada pel col·lectiu
+%#  d'Artistes de la Garrotxa, que planteja fer interpretacions del quadre «La Càrrega» d'en Ramon Casas i Carbó
+%#
+%#  L'obra generada duu el títol genèric «la doble espiral de La Càrrega»
+%#
+%#  Treballarem a partir d'una imatge cedida pel Museu Comarcal de la Garrotxa, que és on es troba exposada l'obra original
+%#  N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, són:
+%#
+%#  laDobleEspiralDeLaCarrega.pdf
+%#
+%#  Cal·ligrama de gran complexitat doncs, actualment, pot posar al límit els recursos de la màquina i del visualitzador de PDF
+%#  que l'obri (p.e. els que utilizen els navegadors d'Internet o l'AdobeReader). Desaconsellem obrir-lo en un dispositiu mòbil
+%#  o dins un navegador. Degut a l'alta densitat de text, compost en una línia corba, les funcions de cerca de paraules
+%#  d'aplicacions com l'AdobeReader (v. XI) es col·lapsen i deixen de funcionar.
+%# 
+%#  Tipografies utilitzades: Cinta-Heavy Italic (espiral de les víctimes) i WerdetScript Regular (espiral dels botxins),
+%#  del tipògraf de Les Borges Blanques, Josep Patau Bellart http://www.tipopepel.com
+%#
+%#  Els textos, que fan la funció dels píxels d'imatge, van endreçats en dues espirals concèntriques (víctimes i botxins)
+%#
+%#  L'espiral de les víctimes, es proveeix de continguts textuals (escrits només una vegada) dels recursos següents:
+%#  La Llista de Reparació Jurídica de Víctimes del Franquisme (1938-1980) publicades per l'Arxiu Nacional de Catalunya...
+%#  http://anc.gencat.cat/ca/detall/noticia/La-llista-de-reparacio-juridica-de-victimes-del-franquisme-en-dades-obertes
+%#  filtrades i generades via llegeixCSVopenData_escriuArrays.ps (vegeu https://github.com/marcantonifemfum/faSantJaume)
+%#  ordenades per dones/homes/persones jurídiques, té actualment més de seixanta-sis mil registres
+%#  Llistat d'ens i persones represaliades per l'Estat Espanyol, entre 2015 i 2018 a Catalunya, per convocar i participar del
+%#  dret democràtic de votar en el referèndum d'autodeterminació i creació de la República, l'1 d'octubre de 2017
+%#  s'ha fet un buidat manual dels més de 800 noms d'ens i persones de les següents fonts:
+%#  L'informe «El Minotaure del 78» http://cup.cat/sites/default/files/el_minotaure_del_78_revisat_alta_mod.pdf
+%#  Inventari de d'anys dels Servidors Públics de Catalunya https://www.servidorscat.cat/persones-afectades
+%#  Informe «1-O. Llibertat d'informació a la corda fluixa» https://www.media.cat/wp-content/uploads/2017/12/Informe_1-O_CAT.pdf
+%#  712 alcaldies investigades http://www.municipisindependencia.cat/wp-content/uploads/2017/09/Llistat_ajuntaments_decret6setembre_1209AMI.16.00.pdf
+%#
+%#  L'espiral dels botxins, es proveeix de continguts textuals (repetits diverses vegades) dels recursos següents:
+%#  Interlocutòries i resolucions de jutges i fiscals espanyols que han provocat els darrers empresonaments, exilis, multes,
+%#  destitucions, tancaments de pàgines web, escorcolls, censures i repressió policial a la desobediència civil catalana
+%#  http://beteve.cat/wp-content/uploads/2018/04/Nota-premsa-fiscalia-Audiencia-Nacional.pdf
+%#  http://www.lavanguardia.com/politica/20180323/441870715986/auto-juez-llarena-carcel-turull-rull-romeva-bassa-forcadell.html 
+%#  https://www.scribd.com/document/362996220/Querella-del-Fiscal-General-del-Estado-contra-Puigdemont-Junqueras-y-el-resto-de-consellers-cesados 
+%#  http://www.poderjudicial.es/stfls/TRIBUNAL%20SUPREMO/DOCUMENTOS%20DE%20INTER%C3%89S/TS%20Penal%20auto%2022%20enero%202018.pdf
+%#  https://www.elnacional.cat/uploads/s1/25/24/44/6/FGE.-13.09.2017.pdf
+%#
+%#  lEspiralDeLaCarrega_victimes1936-2018.pdf
+%#
+%#  Cal·ligrama construït exclusivament amb els recursos textuals de les víctimes, descrits a laDobleEspiralDeLaCarrega.pdf,
+%#  escrits només una vegada. Menys complex, pot obrir-se en un dispositiu mòbil i no fa un ús tant intensiu dels recursos
+%#  del visualitzador de PDF. Per exemple, l'AdobeReader ja permet fer-hi cerques textuals sense col·lapsar.
+%#
+%#  lEspiralDeLaCarrega_victimes2015-2018.pdf
+%# 
+%#  Cal·ligrama construït amb els recursos textuals de les darreres víctimes 2015-2018, descrits anteriorment a
+%#  laDobleEspiralDeLaCarrega.pdf, escrits només una vegada. Molt lleuger i operatiu.
+%#
+%#  Ús:
+%#  Per a intèrprets PostScript `GNU AGPL Ghostscript´ multiplataforma, però amb ben pocs retocs, també pot córrer
+%#  amb l'Adobe Acrobat Distiller o amb el MacOSX PSNormalizer Framework / Apple pstopdf
+%#
+%#  Llicència:
+%#  `Copyleft 2018 :: l'Ametlla de Merola :: Marc Antoni Malagarriga i Picas´
+%#  `<http://www.femfum.com> | <marcantoni@femfum.com>´
+%#  `https://github.com/marcantonifemfum/ESCRiBA´
+%#
+%#  Aquest programa és programari lliure: podeu redistribuir-lo i/o modificar-lo
+%#  sota els termes de la Llicència Pública General de GNU publicada per la Free
+%#  Software Foundation, ja sigui la versió 3 de la Llicència, o (a la seva elecció)
+%#  qualsevol versió posterior.
+%#
+%#  Aquest programa es distribueix amb l'esperança que sigui útil, però SENSE CAP GARANTIA;
+%#  ni tan sols la garantia implícita MERCANTIL o d'APTITUD PER A UN OBJECTIU PARTICULAR.
+%#  Consulteu els detalls de la Llicència Pública General de GNU per a més informació.
+%#
+%#  Haurieu de rebre una còpia de la Llicència Pública General de GNU junt amb aquest
+%#  programa. En cas contrari, consulteu <http://www.gnu.org/licenses/>
+
+%%LaCàrrega indica el codi orientat a l'obra de reinterpretació d'#ArtistesDelaRepública
+%%UCarrion és una de les variants de codi de l'ESCRiBA aplicada a la gramàtica generativa
+
+%%% implementem a l'ESCRiBA la generació de cal·ligrames amb el text cargolat
+%%% de com treballa:
+%%% reprodueix tipogràficament imatges quadrades en format JPEG i en espai de color RGB
+%%% ens cal entrar manualment l'ample i alt dels píxels d'imatge
+%%% juga amb la correspondència: carrer = cos = píxel
+%%% pot treballar directament amb fonts tipogràfiques en format OTF, MM, PFB, TTF i també CID
+%%% duu un pestell que avisa si s'ha esgotat el text (tornant a començar idefinidament)
+%%% podem treballar en doble o + espirals concèntriques i tractar textos compostos en paral·lel
+%%% el text es compon en la mateixa direcció de com s'ha generat el cursus, per la part de dins, caixat a la tibetana
+%%UCarrion
+%%% podem reduir progressivament el cos del text a l'acostar-nos al centre de l'espiral per millorar-ne la composició
+%%+ marcarem així les variables claus de configuració
+
+%%% millores a fer:
+%1% aplegar totes les variables en un menú de capçalera
+%2% enllaçar-hi NouLectorDeJPEGs#.ps per validar la imatge i capturar-ne les dades necessaries (píxels, canals, etc)
+%3% poder decidir el radi de la espiral en funcio de l'ample o l'alt de la pagina (tallant o no el cargol)
+%4% poder adaptar el cargol (deformant en 2D la matriu) al format de la imatge
+%5% poder decidir si volem escriure de dins a fora o de fora a dins (sentit de generacio del cargol)
+%6% poder decidir si el text va per l'interior o l'exterior del perimetre del cargol
+%7% millorar la rapidesa d'execució amb una nova estratègia de composició (mocatipus2.ps i mocadora_tipografica.ps)
+
+%% línia de comanda a Ghostscript (Unix/Linux)
+%% on és clau d'invocar -dAutoRotatePages=/None perquè no ens giri la pàgina segons l'orientació del text
+%% gs -q -dNOSAFER -o out.pdf -sDEVICE=pdfwrite -dAutoRotatePages=/None -c .setpdfwrite -f  ESCRiBA_cargol_lacarrega.ps
+
+
+%%+ píxels x d'imatge
+953
+%100
+%1347
+/imatge_X exch def
+
+%%+ píxels y d'imatge
+953
+%100
+%1347
+/imatge_Y exch def
+
+%%+ cos del tipus
+10
+dup /cosTipus exch def /cosFinal exch def
+
+%% marges de la vora de la pàgina
+cosTipus 3 mul /mArges exch def
+%% prompt de sortida
+(\n\n >>> silenci, l'ESCRiBA treballa...\n\n)print flush
+
+%%+ path al JPEG a RGB
+%% Atenció: hi ha JPEGs no compatibles amb el filtre DCTDecode doncs s'han de desar sense miniatures ni opcions progressiva
+%%LaCàrrega imatge
+(/Users/femfum/Republica/laCarrega/XeviRoura_wetransfer-9195b4_laCarrega/LaCarrega_ALTA_953x953_groc.jpg)
+%(/Users/femfum/Republica/laCarrega/XeviRoura_wetransfer-9195b4_laCarrega/LaCarrega_piolin_100x100.jpg)
+%(/Users/femfum/Republica/laCarrega/XeviRoura_wetransfer-9195b4_laCarrega/LaCarrega_ALTA_1347x1347_groc.jpg)
+(r) file /aLLeGiR exch def
+
+%%+ fitxer o string de text a llegir
+%%LaCàrrega text de les víctimes (generat via faTextLaCarrega.ps)
+%% treballem llegint un arxiu al disc
+(/Users/femfum/Republica/laCarrega/lespiraldelacarrega/TextLaCarrega_eVictimes.txt)
+%(/Users/femfum/Republica/laCarrega/lespiraldelacarrega/victimes_2015_2018_NOarray.txt)
+(r) file  %% convertim a fitxer des del path sense decodificar
+
+%% si treballem amb string, el fitxer ha d'estar comentat
+%(ª º \205 < > \253 \273 mal rebrot establert pels elements que intervingueren a l'èxtasi dels mesells )
+%()  %% ep! una string buida provoca un loop infinit
+
+<< >> /ReusableStreamDecode filter dup /fitxerLC exch def bytesavailable /LCbytes exch def
+
+%% format x de pàgina
+imatge_X cosTipus mul dup mArges 2 mul add 
+%%LaCàrrega màxim de pàgina permès a pdf
+14400 ge
+{
+ (\n\n >>>> heu exhaurit el màxim format de pàgina permès per les X >> )print flush == quit
+}
+{
+ /gina_X exch def
+}ifelse
+%% format y de pàgina
+imatge_Y cosTipus mul dup mArges 2 mul add
+%%LaCàrrega màxim de pàgina permès a pdf
+14400 ge
+{
+ (\n\n >>>> heu exhaurit el màxim format de pàgina permès per les Y >> )print flush == quit
+}
+{
+ /gina_Y exch def
+}ifelse
+
+aLLeGiR 0 setfileposition
+aLLeGiR
+<<
+  /Filter /DCTDecode
+  /DecodeParms <</ColorTransform 1>>
+  /Intent 3
+>> /ReusableStreamDecode filter
+/AllEgIr exch def  %% ens quedem el fitxer decodificat
+%%  així ens estalviem d'escriure res a disc
+
+%%LaCàrrega
+%% per sumar tots els octets dels caràcters (ara 1 octet = 1 glif) que ens ocupa l'espiral
+/espiraloctets 0 def
+
+%% codi reutilitzat:
+%!PS-Adobe-2.0
+%%Title: Blue Book Program 11, on page 171
+%%Creator: Adobe Systems Incorporated 
+%%CreationDate: Thu Dec 28 17:41:49 PST 1989
+%%EndComments
+/pathtextdict 26 dict def
+/pathtext
+{
+ pathtextdict begin
+ /offset exch def
+ %% /str exch def
+%%LaCàrrega
+ /fAllegir exch def
+ /pathdist 0 def
+ /setdist offset def
+ /charcount 0 def
+ gsave
+ flattenpath
+ {
+  movetoproc
+ }
+ {
+  linetoproc
+ }
+ {
+  curvetoproc
+ }
+ {
+  closepathproc
+ }
+ pathforall
+ grestore
+ newpath
+ end
+}def
+pathtextdict begin
+/movetoproc
+{
+ /newy exch def
+ /newx exch def
+ /firstx newx def
+ /firsty newy def
+ /ovr 0 def
+ newx newy transform
+ /cpy exch def /cpx exch def
+}def	
+/linetoproc
+{
+ /oldx newx def
+ /oldy newy def
+ /newy exch def
+ /newx exch def
+ /dx newx oldx sub def
+ /dy newy oldy sub def
+ /dist dx dup mul dy dup mul add sqrt def
+ dist 0 ne
+ {
+  /dsx dx dist div ovr mul def
+  /dsy dy dist div ovr mul def	    
+  oldx dsx add oldy dsy add transform
+  /cpy exch def
+  /cpx exch def
+  /pathdist pathdist dist add def
+  {  %% loop
+   setdist pathdist le
+   {
+    charcount
+    %% str length
+%%LaCarrega
+    LCbytes lt
+    {
+     setchar
+    }
+    {
+%%LaCàrrega
+     (\n ...hem exhaurit el text\n)print flush
+     %% anem sumant per avaluar els glifs totals compostos
+     userdict dup /espiraloctets get charcount add /espiraloctets exch put
+     /charcount 0 def  %% inicialitzem el comptador de caràcters compostos
+     fitxerLC 0 setfileposition  %% anem altra cop a l'inici del text
+     %% ara fem que si exhaurim el text, tornem a repetir-lo fins que omplim tota l'espiral
+     %% exit
+    }ifelse
+   }
+   {
+%%LaCàrrega
+    %% aquí hem exhaurit el segment de línia que voreja la corba, fruit del flattenpath
+    /ovr setdist pathdist sub def
+    exit
+   }ifelse
+  }loop
+ }if
+}def  
+/curvetoproc
+{
+ (ERROR: No curveto's after flattenpath!) print
+} def
+/closepathproc
+{
+ firstx firsty linetoproc
+ firstx firsty movetoproc
+}def
+/setchar
+{
+ /char
+%%LaCàrrega
+ %% str charcount 1 getinterval
+ fitxerLC read pop 1 string dup 3 -1 roll 0 exch put
+ def
+ /charcount charcount 1 add def
+ /charwidth char stringwidth pop def
+ gsave
+ cpx cpy itransform
+
+ %% aquí les posicions dels caràcters estan preses des del centre mateix de l'espiral
+ %% (path actual) que és on hi ha el punt 0,0. Llavors, només cal sumar-hi la meitat
+ %% de l'ample de pàgina (doncs l'ample de pàgina té les mateixes mides que l'espiral)
+ %% i ja tindrem la posició des del punt 0,0 mestre. Si a demés ho dividim pel valor
+ %% del carrer de l'espiral, que ha de coincidir amb l'ample del píxel, i arrodonim el resultat,
+ %% trindrem la coordenada el píxel que correspon a cada glif o lletra
+ 2 copy gina_Y 2 div add cosTipus div round cvi  %% les y
+ exch gina_X 2 div add cosTipus div round cvi  %% les x
+ %% anem a llegir el píxel corresponent, segons aquesta posició x,y
+ dup imatge_X eq
+ {  %% si és igual al màxim dels píxels d'x, en restem 1
+  pop imatge_X 1 sub
+ }if
+ exch
+ imatge_Y exch sub  %% restem l'Heigth de la imatge a la posició y
+ imatge_X mul  %% li multipliquem el Width de la imatge
+ add  %% ho sumem a la posició x i obtenim el byteOffset del fitxer on llegir el valor del píxel a pintar
+ 3 mul  %% ho multipliquem pel nombre de components de color
+ AllEgIr dup 3 -1 roll
+ {  %% quan ens acostem al centre de l'espiral es podria generar un: /ioerror in --setfileposition--
+  setfileposition 3 string readstring pop
+ }stopped
+ {  %% quan fem l'ajustat manual de la frenada del text al centre de l'espiral es poden generar errors
+  (\n\n...per què peta?\n\n)print flush
+  pstack quit
+ }if
+ dup 0 get 1 255 div mul /R exch def
+ dup 1 get 1 255 div mul /G exch def
+ 2 get 1 255 div mul /B exch def
+
+ translate
+ dy dx atan rotate
+
+ %% aquí pintem el glif del color que toca
+ /DeviceRGB setcolorspace R G B setcolor
+
+ 0 0 moveto
+ char show
+ currentpoint
+ transform
+ /cpy exch def
+ /cpx exch def
+ grestore
+ /setdist setdist charwidth add def
+
+%%UCarrion frenada de l'espiral de les víctimes
+ true  %% fem la frenada?
+ {
+  setdist puntsDlespiral
+  Vfrenada  %% el valor de frenada també depèn de cada cos de lletra i cursus espiral triat
+  sub gt
+  {  %% si treballem amb la variable cosTipus per reduïr l'arribada al centre
+     %% provoquem un error el càlcul per localitzar el píxel d'imatge
+   userdict dup /cosFinal get .060 sub dup 3 1 roll /cosFinal exch put
+   /laLlatina findfont exch scalefont setfont
+  }if
+ }if
+}def
+
+%%LaCàrrega (aquests valors poden generar errors d'execució)
+%%+ setdist es compara amb el resultat final del prompt ( <<< punts recorreguts fins al centre de l'espiral)
+/puntsDlespiral %7136942  %% la doble espiral de La Càrrega
+%79338  %% l'espiral de La Càrrega víctimes 2015-2018
+%% l'espiral de La Càrrega víctimes 1936-2018
+7141407 def  %% modifiquem els punts recorreguts pel text de l'espiral de les víctimes
+%%+ valor de frenada de l'espiral de víctimes
+/Vfrenada %% 322  %% la doble espiral de La Càrrega
+%330  %% l'espiral de La Càrrega víctimes 1936-2018
+350  %% l'espiral de La Càrrega víctimes 2015-2018
+ def 
+
+end
+%% fi del codi del BlueBook
+
+%% format de pàgina i precisió de treball
+%%LaCàrrega
+<<
+  /PageSize [gina_X mArges 2 mul add gina_Y mArges 2 mul add]
+  /HWResolution [4000 4000]  %% activem al màxim la resolució del dispositiu (veure ghostpdf.ppd)
+>>setpagedevice
+%%ATENCIÓ: en cal·ligrames d'espirals molt grans, el paràmetre setflat, posat a màxim de qualitat, provoca distorsions i errors
+%% és molt important que el posicionament del text sigui acurat i si tenim setflat al màxim .2 i la resolució del dispositiu
+%% al maxim també, 4000, podem aconseguir molt bons resultats treballant en imatges per sota dels 1000x1000 píxels
+%% però amb l'algorisme del BlueBook això és molt teòric, doncs es dóna la contradicció que a quan baixem d'1 el nombre de
+%% caràcters totals que es componen seguint l'espiral baixa dràsticament, p.e: a 1: 1561432, a .6: 1561255, a .2: 1558782
+%% setflat pot anar de .2 a 100, i el valor per defecte, 1, dóna bons resultats en cal·ligrames molt grans
+1 setflat
+
+%% color de fons
+gsave
+%%LaCàrrega
+1 1 1 1  %% negre, negre per al màxim contrast en CMYK
+setcmykcolor
+0 0 gina_X mArges 2 mul add gina_Y mArges 2 mul add rectfill
+grestore
+
+%% posem els marges
+mArges dup translate
+
+%%+ nombre d'espirals concèntriques  
+/QuantesMolles 1 def
+
+save
+%% fem el cal·ligrama amb l'espiral de les víctimes
+%%+ tipografia de treball per les víctimes
+%% recodificat llati a 1 octet
+(/Users/femfum/calaixDtipus/PepelPatau/Cinta\ Beta/Cinta-Heavy\ Italic.otf)
+findfont dup length dict begin
+{
+ 1 index /FID ne {def}{pop pop}ifelse
+}forall
+/Encoding
+%% exclusiu de GS
+systemdict /EncodingDirectory get /WinAnsiEncoding get
+%% ISOLatin1Encoding
+%% per personalitzar el xifrat a d'altres caràcters
+dup length array copy dup dup 0 /lgeminada put
+1 /Lgeminada put
+def
+currentdict end
+/laLlatina exch definefont pop
+%% fi de recodificat
+
+/laLlatina findfont cosTipus scalefont setfont
+
+newpath
+
+%% variables del cursus espiral de les víctimes
+/carrer cosTipus QuantesMolles mul def  %% ample del carrer de l'espiral = cos del tipus x quantitat de molles
+/radi gina_X 2 div def
+/grauDE 0 def
+/grauA {grauDE 180 add} def
+/xC 0 def
+/lliga true def
+%% anem al centre
+gina_X 2 div gina_Y 2 div translate
+%% fem el cursus espiral de les víctimes
+1 1 scale  %% si deformem el cercle hem de restablir la proporció mes avall
+{
+ xC 0 radi grauDE grauA arc
+ xC carrer 2 div lliga {sub}{add} ifelse /xC exch def
+ radi carrer 2 div sub /radi exch def
+ radi 0 le {exit} if
+ /grauDE grauA def
+ /lliga lliga not def
+}loop
+
+%% si volem veure el cursus segmentat per flattenpath...
+%% gsave
+%% 1 0 0 setrgbcolor
+%% 0 setlinewidth
+%% stroke
+%% grestore
+
+1 1 scale  %% per regla de 3 restablim l'escala al 100% perquè no se'ns deformin les lletres!
+
+%%LaCàrrega
+fitxerLC
+
+0 pathtext  %% si és zero, componem des del principi del path i llavors cridem l'algorisme del BlueBook
+
+%%LaCàrrega
+(\n ...hem exhaurit l'espiral de les víctimes\n\n)print flush  %% fi del cursus constructor
+%% ens diu el byte on ha acabat de llegir el text (com que treballem a 1 octet coincideix amb el caràcter llegit a fitxerLC)
+%% al cal·ligrama correspon exactament al darrer tram de text que acaba al centre de l'espiral
+pathtextdict /charcount get dup 128 string cvs print flush ( <<< cua de text de les víctimes\n)print flush
+espiraloctets add 128 string cvs print flush ( <<< octets totals de l'espiral de les víctimes\n)print flush
+pathtextdict /setdist get cvi 128 string cvs print flush ( <<< punts recorreguts fins al centre de l'espiral de les víctimes\n\n)print flush
+restore
+%% fi del cal·ligrama amb l'espiral de les víctimes
+
+false{  %% fem l'espiral dels botxins?
+
+%% fem el cal·ligrama amb l'espiral dels botxins
+save
+%%LaCàrrega
+%% per sumar tots els octets dels caràcters (ara 1 octet = 1 glif) que ens ocupa l'espiral
+/espiraloctets 0 def
+
+%%+ fitxer o string de text a llegir
+%%LaCàrrega text dels botxins (generat via faTextLaCarrega.ps)
+%% treballem llegint un arxiu al disc
+(/Users/femfum/Republica/laCarrega/lespiraldelacarrega/TextLaCarrega_eBotxins.txt)
+(r) file  %% convertim a fitxer des del path sense decodificar
+
+%% si treballem amb string, el fitxer ha d'estar comentat
+%% (ª º \205 < > \253 \273 junto a un riesgo de riesgo de reiteración delictiva, confluye en todos ellos un marcado riesgo de fuga )
+%()  %% ep! una string buida provoca un loop infinit
+
+<< >> /ReusableStreamDecode filter dup /fitxerLC exch def bytesavailable /LCbytes exch def
+
+%%+ tipografia de treball dels botxins
+%% recodificat llati a 1 octet
+% (/Users/femfum/Sites/intranet.fub.edu/vi_suals14/Farrerons/FarreronsSerif-Italic.otf)
+% (/Users/femfum/calaixDtipus/PepelPatau/furafont/tipus/Valliciergo.otf)
+(/Users/femfum/calaixDtipus/PepelPatau/WerdetScript/Werdet_Script_regular/Werdet\ Script\ regular.otf)
+findfont dup length dict begin
+{
+ 1 index /FID ne {def}{pop pop}ifelse
+}forall
+/Encoding
+%% exclusiu de GS
+systemdict /EncodingDirectory get /WinAnsiEncoding get
+%% ISOLatin1Encoding
+%% per personalitzar el xifrat a d'altres caràcters
+%% dup dup length array copy dup 0 /lgeminada put
+%% dup 1 /Lgeminada put
+def
+currentdict end
+/laLlatina exch definefont pop
+%% fi de recodificat
+
+/laLlatina findfont cosTipus scalefont setfont
+
+newpath
+
+%% variables del cursus espiral dels botxins
+/carrer cosTipus QuantesMolles mul def  %% ample del carrer de l'espiral = cos del tipus x quantitat de molles
+%% la molla més petita nomès cal que modifiquem el radi inicial
+/radi gina_X 2 div carrer 2 div sub def
+/grauDE 0 def
+/grauA {grauDE 180 add} def
+/xC 0 def
+/lliga true def
+%% anem al centre
+gina_X 2 div gina_Y 2 div translate
+%% fem el cursus espiral dels botxins
+1 1 scale  %% si deformem el cercle hem de restablir la proporció mes avall
+{
+ xC 0 radi grauDE grauA arc
+ xC carrer 2 div lliga {sub}{add} ifelse /xC exch def
+ radi carrer 2 div sub /radi exch def
+ radi 0 le {exit} if
+ /grauDE grauA def
+ /lliga lliga not def
+}loop
+
+%% si volem veure el cursus segmentat per flattenpath...
+%% gsave
+%% 1 0 0 setrgbcolor
+%% 0 setlinewidth
+%% stroke
+%% grestore
+
+1 1 scale  %% per regla de 3 restablim l'escala al 100% perquè no se'ns deformin les lletres!
+
+%%LaCàrrega
+fitxerLC
+
+%%LaCàrrega (aquests valors poden generar errors d'execució)
+%%+ setdist es compara amb el resultat final del prompt ( <<< punts recorreguts fins al centre de l'espiral)
+pathtextdict dup /puntsDlespiral 7115802 put  %% modifiquem el valor dels punts recorreguts pel text dels botxins
+%%+ valor de frenada de l'espiral dels botxins
+/Vfrenada 200 put
+
+0 pathtext  %% si és zero, componem des del principi del path i llavors cridem l'algorisme del BlueBook
+
+%%LaCàrrega
+(\n ...hem exhaurit l'espiral dels botxins\n\n)print flush  %% fi del cursus constructor
+%% ens diu el byte on ha acabat de llegir el text (com que treballem a 1 octet coincideix amb el caràcter llegit a fitxerLC)
+%% al cal·ligrama correspon exactament al darrer tram de text que acaba al centre de l'espiral
+pathtextdict /charcount get dup 128 string cvs print flush ( <<< cua de text dels botxins\n)print flush
+espiraloctets add 128 string cvs print flush ( <<< octets totals de l'espiral dels botxins\n)print flush
+pathtextdict /setdist get cvi 128 string cvs print flush ( <<< punts recorreguts fins al centre de l'espiral dels botxins\n\n)print flush
+restore
+%% fi del cal·ligrama amb l'espiral dels botxins
+
+}if  %% fem l'espiral dels botxins?
+
+%%+ metadades
+[
+%%UCarrion
+/Title (l'espiral de La Càrrega)  %% (la doble espiral de La Càrrega)
+/Keywords (#ArtistesDeLaRepública, #FreeCatalanPoliticalPrisoners, #LlibertatPresosPolítics, Ramon Casas i Carbó, Museu Comarcal de La Garrotxa, #SOSDemocracy, #noupaís)
+/Author (Marc Antoni Malagarriga-Picas #ArtistesDeLaRepública 2018)
+/Subject (República Catalana)  %% (Bot cal·ligrama)
+/Creator (¸.·´¯`·.¸.·´¨«~ ESCRiBA by FemFum.com)
+/DOCINFO
+pdfmark
+
+%% obrirem el PDF amb
+[
+%% /PageMode /FullScreen
+%% /View [/XYZ 900 900 1.25]
+/View [/FitH 1100]
+/DOCVIEW pdfmark
+(\n ...l'ESCRiBA ha enllestit la feina\n\n)print flush
+
+showpage
+
