@@ -29,7 +29,7 @@ N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, s�
 
    **L'espiral de les víctimes**, es proveeix de continguts textuals (escrits només una vegada) dels recursos següents:
    
-   La [Llista de Reparació Jurídica de Víctimes del Franquisme (1938-1980)][1] publicades per l'Arxiu Nacional de Catalunya, filtrades i generades via `llegeixCSVopenData_escriuArrays.ps` [vegeu el projecte faSantJaume][2] …i ordenades per dones/homes/persones jurídiques, té actualment més de seixanta-sis mil registres.
+   La [Llista de Reparació Jurídica de Víctimes del Franquisme (1938-1980)][1] publicades pel Parlament i per l'Arxiu Nacional de Catalunya, filtrades i generades via `llegeixCSVopenData_escriuArrays.ps` [vegeu el projecte faSantJaume][2] …i ordenades per dones/homes/persones jurídiques, té actualment més de seixanta-sis mil registres.
    
    El Llistat d'ens i persones represaliades per l'Estat Espanyol, entre 2015 i 2018 a Catalunya, per convocar i participar del dret democràtic de votar en el referèndum d'autodeterminació i creació de la República, l'1 d'octubre de 2017.
    
