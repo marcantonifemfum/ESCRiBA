@@ -19,7 +19,7 @@ N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, s�
 
 ![detall del cal·ligrama «la doble espiral de La Càrrega»](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallDobleEspiralDeLaCarrega.png)
 
-   Cal·ligrama de gran complexitat doncs, actualment, pot posar al límit els recursos de la màquina i del visualitzador de PDF que l'obri (p.e. els que utilizen alguns navegadors d'Internet o l'*AdobeReader*). Desaconsellem obrir-lo en un dispositiu mòbil. Degut a l'alta densitat de text, compost en una línia corba, les funcions de cerca de paraules d'aplicacions com l'*AdobeReader* (v.XI) es col·lapsen i deixen de funcionar.
+   Cal·ligrama de gran complexitat doncs, actualment, pot posar al límit els recursos de la màquina i del visualitzador de PDF que l'obri (p.e. els que utilitzen alguns navegadors d'Internet o l'*AdobeReader*). Desaconsellem obrir-lo en un dispositiu mòbil. Degut a l'alta densitat de text, compost en una línia corba, les funcions de cerca de paraules d'aplicacions com l'*AdobeReader* (v.XI) es col·lapsen i deixen de funcionar.
  
    Tipografies utilitzades: *Cinta-Heavy Italic* (per l'espiral de les víctimes) i *WerdetScript Regular* (per l'espiral dels botxins), del tipògraf de Les Borges Blanques, [Josep Patau Bellart][12]
  
@@ -48,6 +48,8 @@ N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, s�
 
 El teniu descarregable [aquí][16] (60,2MB absteniu-vos de fer-ho amb un mòbil!)
   
+  Pensat per a ser reproduït a gran format (un mínim de 5x5 metres), empaperant el terra d'una plaça o un espai on l'espectador pugui passejar-s'hi a sobre, llegint el text i observant la imatge en perspectiva. En breu en farem una versió tessel·lada a un format DiN, per facilitar la seva impressió de forma col·laborativa.
+  
 ---
   
 2. `lEspiralDeLaCarrega_victimes1936-2018.pdf`
@@ -55,6 +57,8 @@ El teniu descarregable [aquí][16] (60,2MB absteniu-vos de fer-ho amb un mòbil!
 ![detall del cal·ligrama escrit amb les víctimes 1936-2018](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallEspiralDeLaCarrega_victimes1936-2018.png)
 
    Cal·ligrama construït exclusivament amb els recursos textuals de les víctimes, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Menys complex, pot obrir-se en un dispositiu mòbil i no fa un ús tant intensiu dels recursos del visualitzador de PDF. Per exemple, l'*AdobeReader* ja permet fer-hi cerques textuals sense col·lapsar. Descarregable [aquí][15] (29,1MB)
+   
+   Pensat per a ser reproduït a gran format (un mínim de 3x3 metres), empaperant el terra d'una plaça o un espai on l'espectador pugui passejar-s'hi a sobre, llegint el text i observant la imatge en perspectiva. En breu en farem una versió tessel·lada a un format DiN, per facilitar la seva impressió de forma col·laborativa.
 
 ---
 
@@ -80,11 +84,13 @@ Al [codi font][13] hi ha descrites i comentades totes les funcionalitats de l'al
 + Ens cal entrar manualment l'ample i alt dels píxels d'imatge
 + Juga amb la correspondència: carrer = cos = píxel
 + Treballa directament amb fonts tipogràfiques en format *OTF MM PFB TTF* i també *CID*
-+ Duu un pestell que avisa si s'ha esgotat el text (tornant a començar idefinidament)
++ Duu un pestell que avisa si s'ha esgotat el text (tornant a començar indefinidament)
 + Podem treballar en doble o + espirals concèntriques i tractar textos compostos en paral·lel
 + El text es compon en la mateixa direcció de com s'ha generat el *cursus*, per la part de dins, caixat a la tibetana
 + Podem reduir progressivament el cos del text a l'acostar-nos al centre de l'espiral per millorar-ne la composició
 + El text que farceix el cal·ligrama, és xifrat a WinAnsi/latin1 i el generem a partir de l'algorisme [`faTextLaCarrega.ps`][17]
+
+**Documentació d'errors, suggeriments i tota mena de col·laboracions, seran benvingudes!**
 
 [1]: http://anc.gencat.cat/ca/detall/noticia/La-llista-de-reparacio-juridica-de-victimes-del-franquisme-en-dades-obertes
 [2]: https://github.com/marcantonifemfum/faSantJaume
