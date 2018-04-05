@@ -2,7 +2,9 @@
 
 ### [ca]  El formen un conjunt d'algorismes per fer cal·ligrames: imatges generades tipogràficament
 
-   
+---
+---
+
 #### algorisme `ESCRiBA_cargol_lacarrega.ps`
 
 Aquesta versió del codi deriva d'un experiment de gramàtica generativa (_%%UCarrion @BotCarrion_) i amb l'impuls de la plataforma d'**#ArtistesDelaRepública** ens afegim a l'acció proposada pel col·lectiu d'Artistes de la Garrotxa, que planteja fer interpretacions del quadre «La Càrrega» d'en *Ramon Casas i Carbó*.
