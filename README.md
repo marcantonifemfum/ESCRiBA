@@ -47,8 +47,15 @@ N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, s�
 
 2. `lEspiralDeLaCarrega_victimes1936-2018.pdf`
 
-   Cal·ligrama construït exclusivament amb els recursos textuals de les víctimes, descrits a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Menys complex, pot obrir-se en un dispositiu mòbil i no fa un ús tant intensiu dels recursos del visualitzador de PDF. Per exemple, l'*AdobeReader* ja permet fer-hi cerques textuals sense col·lapsar.
+![detall del cal·ligrama escrit amb les víctimes 1936-2018]()
 
+   Cal·ligrama construït exclusivament amb els recursos textuals de les víctimes, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Menys complex, pot obrir-se en un dispositiu mòbil i no fa un ús tant intensiu dels recursos del visualitzador de PDF. Per exemple, l'*AdobeReader* ja permet fer-hi cerques textuals sense col·lapsar.
+
+3. `lEspiralDeLaCarrega_victimes2015-2018.pdf`
+
+![detall del cal·ligrama escrit amb les víctimes 2015-2018]()
+
+   Cal·ligrama construït amb els recursos textuals de les darreres víctimes 2015-2018, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Molt lleuger i operatiu.
 
 [1]: http://anc.gencat.cat/ca/detall/noticia/La-llista-de-reparacio-juridica-de-victimes-del-franquisme-en-dades-obertes
 [2]: https://github.com/marcantonifemfum/faSantJaume
