@@ -2,7 +2,7 @@
 
 ### [ca]  El formen un conjunt d'algorismes per fer cal·ligrames: imatges generades tipogràficament
 
-  
+   
 #### algorisme `ESCRiBA_cargol_lacarrega.ps`
 
 Aquesta versió del codi deriva d'un experiment de gramàtica generativa (_%%UCarrion @BotCarrion_) i amb l'impuls de la plataforma d'**#ArtistesDelaRepública** ens afegim a l'acció proposada pel col·lectiu d'Artistes de la Garrotxa, que planteja fer interpretacions del quadre «La Càrrega» d'en *Ramon Casas i Carbó*.
@@ -19,7 +19,7 @@ N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, s�
 
 ![detall del cal·ligrama «la doble espiral de La Càrrega»](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallDobleEspiralDeLaCarrega.png)
 
-   Cal·ligrama de gran complexitat doncs, actualment, pot posar al límit els recursos de la màquina i del visualitzador de PDF que l'obri (p.e. els que utilizen els navegadors d'Internet o l'*AdobeReader*). Desaconsellem obrir-lo en un dispositiu mòbil o dins un navegador. Degut a l'alta densitat de text, composat en una línia corba, les funcions de cerca de paraules d'aplicacions com l'*AdobeReader* (v.XI) es col·lapsen i deixen de funcionar.
+   Cal·ligrama de gran complexitat doncs, actualment, pot posar al límit els recursos de la màquina i del visualitzador de PDF que l'obri (p.e. els que utilizen alguns navegadors d'Internet o l'*AdobeReader*). Desaconsellem obrir-lo en un dispositiu mòbil. Degut a l'alta densitat de text, compost en una línia corba, les funcions de cerca de paraules d'aplicacions com l'*AdobeReader* (v.XI) es col·lapsen i deixen de funcionar.
  
    Tipografies utilitzades: *Cinta-Heavy Italic* (per l'espiral de les víctimes) i *WerdetScript Regular* (per l'espiral dels botxins), del tipògraf de Les Borges Blanques, [Josep Patau Bellart][12]
  
@@ -55,8 +55,9 @@ El teniu descarregable [aquí][16] (60,2MB absteniu-vos de fer-ho amb un mòbil!
 ![detall del cal·ligrama escrit amb les víctimes 1936-2018](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallEspiralDeLaCarrega_victimes1936-2018.png)
 
    Cal·ligrama construït exclusivament amb els recursos textuals de les víctimes, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Menys complex, pot obrir-se en un dispositiu mòbil i no fa un ús tant intensiu dels recursos del visualitzador de PDF. Per exemple, l'*AdobeReader* ja permet fer-hi cerques textuals sense col·lapsar. Descarregable [aquí][15] (29,1MB)
-  
-  
+
+---
+
 3. `lEspiralDeLaCarrega_victimes2015-2018.pdf`
 
 ![detall del cal·ligrama escrit amb les víctimes 2015-2018](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallEspiralDeLaCarrega_victimes2015-2018.png)
@@ -97,8 +98,8 @@ Al [codi font][13] hi ha descrites i comentades totes les funcionalitats de l'al
 [10]: http://www.poderjudicial.es/stfls/TRIBUNAL%20SUPREMO/DOCUMENTOS%20DE%20INTER%C3%89S/TS%20Penal%20auto%2022%20enero%202018.pdf
 [11]: https://www.elnacional.cat/uploads/s1/25/24/44/6/FGE.-13.09.2017.pdf
 [12]: http://www.tipopepel.com
-[13]: http://
-[14]: http://
+[13]: https://github.com/marcantonifemfum/ESCRiBA/blob/master/ESCRiBA_cargol_lacarrega.ps
+[14]: https://github.com/marcantonifemfum/ESCRiBA/blob/master/lEspiralDeLaCarrega_victimes2015-2018.pdf
 [15]: http://femfum.com/PDF/lEspiralDeLaCarrega_victimes1936_2018.pdf
 [16]: http://femfum.com/PDF/laDobleEspiralDeLaCarrega.pdf
-[17]: http://
+[17]: https://github.com/marcantonifemfum/ESCRiBA/blob/master/faTextLaCarrega.ps
