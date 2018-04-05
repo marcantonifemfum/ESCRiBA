@@ -15,7 +15,7 @@ N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, s�
 
 1. `laDobleEspiralDeLaCarrega.pdf`
 
-![detall del cal·ligrama «la doble espiral de La Càrrega»][https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallDobleEspiralDeLaCarrega.png]
+![detall del cal·ligrama «la doble espiral de La Càrrega»](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallDobleEspiralDeLaCarrega.png)
 
    Cal·ligrama de gran complexitat, doncs posa al límit els recursos de la màquina i el visualitzador de PDF que l'obre (p.e. els que utilizen els navegadors d'Internet o l'*AdobeReader*). Desaconsellem obrir-lo en un dispositiu mòbil o dins un navegador. Degut a l'alta densitat de text, composat en una línia corba, les funcions de cerca de paraules d'aplicacions com l'*AdobeReader* es col·lapsen i deixen de funcionar.
  
