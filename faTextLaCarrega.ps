@@ -1,0 +1,92 @@
+%!
+%% generem el text (a pèl, codificat a WinAnsi/Latin1) pel cal·ligrama de La Càrrega
+
+%% fitxers d'escriptura
+(TextLaCarrega_eVictimes.txt) (w) file /fEscriuV exch def  %% espiral de les víctimes
+(TextLaCarrega_eBotxins.txt) (w) file /fEscriuB exch def  %% espiral dels botxins
+
+%% text capçalera per l'espiral de les víctimes
+%fEscriuV («l'espiral de les víctimes» :: ) writestring
+
+%% text de capçalera per l'espiral dels botxins
+%fEscriuB («l'espiral dels botxins» :: ) writestring
+
+[ %% textos de l'espiral de les víctimes
+ [
+  (L'espiral de les víctimes :: Llistat d'ens i persones represaliades per l'Estat Espanyol, entre 2015 i 2018 a Catalunya, per convocar i participar del dret democràtic de votar en el referèndum d'autodeterminació i creació de la República, celebrat l'1 d'octubre de 2017, així con d'altres acusacions que vulneren drets fonamentals i la llibertat d'expressió :: )  %% cap descriptiu
+  (/Users/femfum/Republica/laCarrega/lespiraldelacarrega/victimes_2015_2018.txt)  %% lectura
+  ()  %% separador d'elements a escriure d'entre arrays
+ ]
+ [  %% el llistat de l'ANC
+  ( :: Llistat de persones encausades per la dictadura franquista, entre 1936 i 1980 a Catalunya, en judicis anul·lats pel Parlament de Catalunya · LLEI 11/2017, del 4 de juliol, de reparació jurídica de les víctimes del franquisme. Font: Arxiu Nacional de Catalunya :: [ DONES ] )  %% cap descriptiu
+  (/Users/femfum/OnEtsOncleGuillem/parlament/ReparacioJuridicaVictimes36-77/faStJaume/donesRepresaliades_010218.txt)  %% lectura
+  ( +)  %% separador d'elements a escriure d'entre arrays
+ ]
+ [  %% el llistat de l'ANC
+  (? [ HOMES ] )  %% cap descriptiu
+  (/Users/femfum/OnEtsOncleGuillem/parlament/ReparacioJuridicaVictimes36-77/faStJaume/homesRepresaliats_010218.txt)  %% lectura
+ ( +)  %% separador d'elements escriure d'entre arrays
+ ]
+ [  %% el llistat de l'ANC
+  (? [ PERSONES JURÍDIQUES ] )  %% cap descriptiu
+  (/Users/femfum/OnEtsOncleGuillem/parlament/ReparacioJuridicaVictimes36-77/faStJaume/personesJuridiquesRepresaliades_010218.txt)  %% lectura
+ ( +)  %% separador d'elements escriure d'entre arrays
+ ]
+]
+{  %% forall de les víctimes
+ dup 2 get /sEp exch def
+ dup 0 get fEscriuV exch writestring
+ 1 get (r) file cvx exec
+ {
+  0 get  %% nom de la víctima
+  fEscriuV exch writestring
+  fEscriuV sEp writestring
+ }forall
+}forall
+%% text descriptiu de cua, pel centre de l'espiral de les víctimes
+fEscriuV (? :: https://github.com/marcantonifemfum/ESCRiBA · http://anc.gencat.cat/ca/detall/noticia/La-llista-de-reparacio-juridica-de-victimes-del-franquisme-en-dades-obertes · http://cup.cat/sites/default/files/el_minotaure_del_78_revisat_alta_mod.pdf :: https://www.servidorscat.cat/persones-afectades · https://www.media.cat/wp-content/uploads/2017/12/Informe_1-O_CAT.pdf · http://www.municipisindependencia.cat/wp-content/uploads/2017/09/Llistat_ajuntaments_decret6setembre_1209AMI.16.00.pdf · #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics #ArtistesDeLaRepública #FreeCatalanPoliticalPrisoners #ArtistesDeLaRepública #LlibertatPresosPolítics) writestring
+%% tanquem
+fEscriuV closefile
+
+[ %% textos de l'espiral dels botxins
+ [
+  (l'espiral dels botxins :: Interlocutòries i resolucions de jutges i fiscals espanyols que han provocat els darrers empresonaments, exilis, multes, destitucions, tancaments de pàgines web, escorcolls, censures, vulnerant drets fonamentals i amb repressió policial a la desobediència civil catalana, en el seu procés d'autodeterminació cap a la República :: )  %% cap descriptiu
+  (/Users/femfum/Republica/laCarrega/lespiraldelacarrega/NotaDePremsa_FiscaliAudienciaNacional_abril2018.txt)  %% lectura
+  ( :: )  %% separador d'elements escriure d'entre arrays
+ ]
+ [
+  ()  %% cap descriptiu
+  (/Users/femfum/Republica/laCarrega/lespiraldelacarrega/374696692-Auto-de-Prision-Forcadell-Turull-Romeva-Rull-y-Bassa.txt)  %% lectura
+  ( :: )  %% separador d'elements escriure d'entre arrays
+ ]
+ [
+  ()  %% cap descriptiu
+  (/Users/femfum/Republica/laCarrega/lespiraldelacarrega/causa_20907_2017_Fiscalia220118.txt)  %% lectura
+  ( :: )  %% separador d'elements escriure d'entre arrays
+ ]
+ [
+  ()  %% cap descriptiu
+  (/Users/femfum/Republica/laCarrega/lespiraldelacarrega/QuerellaDelFiscalGeneralDeLestat_30102017.txt)  %% lectura
+  ( :: )  %% separador d'elements escriure d'entre arrays
+ ]
+ [
+  ()  %% cap descriptiu
+  (/Users/femfum/Republica/laCarrega/lespiraldelacarrega/FGE_130917.txt)  %% lectura
+  ( :: )  %% separador d'elements escriure d'entre arrays
+ ]
+]
+{  %% forall dels botxins
+ dup 2 get /sEp exch def
+ dup 0 get fEscriuB exch writestring
+ 1 get (r) file cvx exec
+ {
+  0 get  %% text del botxí
+  fEscriuB exch writestring
+  fEscriuB sEp writestring
+ }forall
+}forall
+%% text descriptiu de cua
+fEscriuB () writestring
+%% tanquem
+fEscriuB closefile
+
