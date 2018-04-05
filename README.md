@@ -3,7 +3,7 @@
 ### [ca]  El formen un conjunt d'algorismes per fer cal·ligrames: imatges generades tipogràficament
 
 
-`ESCRiBA_cargol_lacarrega.ps`
+#### `ESCRiBA_cargol_lacarrega.ps`
 
 Aquesta versió del codi deriva d'un experiment de gramàtica generativa (_%%UCarrion @BotCarrion_) i amb l'impuls de la plataforma d'**#ArtistesDelaRepública** ens afegim a l'acció proposada pel col·lectiu d'Artistes de la Garrotxa, que planteja fer interpretacions del quadre «La Càrrega» d'en *Ramon Casas i Carbó*.
 
@@ -47,15 +47,19 @@ N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, s�
 
 2. `lEspiralDeLaCarrega_victimes1936-2018.pdf`
 
-![detall del cal·ligrama escrit amb les víctimes 1936-2018]()
+![detall del cal·ligrama escrit amb les víctimes 1936-2018](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallEspiralDeLaCarrega_victimes1936-2018.png)
 
    Cal·ligrama construït exclusivament amb els recursos textuals de les víctimes, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Menys complex, pot obrir-se en un dispositiu mòbil i no fa un ús tant intensiu dels recursos del visualitzador de PDF. Per exemple, l'*AdobeReader* ja permet fer-hi cerques textuals sense col·lapsar.
 
 3. `lEspiralDeLaCarrega_victimes2015-2018.pdf`
 
-![detall del cal·ligrama escrit amb les víctimes 2015-2018]()
+![detall del cal·ligrama escrit amb les víctimes 2015-2018](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallEspiralDeLaCarrega_victimes2015-2018.png)
 
    Cal·ligrama construït amb els recursos textuals de les darreres víctimes 2015-2018, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Molt lleuger i operatiu.
+
+#### Ús
+
+Per a intèrprets *PostScript GNU AGPL Ghostscript* multiplataforma, però amb ben pocs retocs, també pot córrer amb l'*Adobe Acrobat Distiller* o amb el *MacOSX PSNormalizer Framework / Apple pstopdf*.
 
 [1]: http://anc.gencat.cat/ca/detall/noticia/La-llista-de-reparacio-juridica-de-victimes-del-franquisme-en-dades-obertes
 [2]: https://github.com/marcantonifemfum/faSantJaume
