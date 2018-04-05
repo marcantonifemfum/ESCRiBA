@@ -7,7 +7,7 @@
 
 #### algorisme `ESCRiBA_cargol_lacarrega.ps`
 
-Aquesta versió del codi deriva d'un experiment de gramàtica generativa (_%%UCarrion @BotCarrion_) i amb l'impuls de la plataforma d'**#ArtistesDelaRepública** ens afegim a l'acció proposada pel col·lectiu d'Artistes de la Garrotxa, que planteja fer interpretacions del quadre «La Càrrega» d'en *Ramon Casas i Carbó*.
+Aquesta versió del codi deriva d'un experiment de gramàtica generativa (_%%UCarrion @BotCarrion_) i amb l'impuls de la plataforma d'[**#ArtistesDelaRepública**][18] ens afegim a l'acció proposada pel col·lectiu d'Artistes de la Garrotxa, que planteja fer interpretacions del quadre «La Càrrega» d'en *Ramon Casas i Carbó*.
 
 L'obra generada duu el títol genèric «**la doble espiral de La Càrrega**»
 
@@ -111,3 +111,4 @@ Al [codi font][13] hi ha descrites i comentades totes les funcionalitats de l'al
 [15]: http://femfum.com/PDF/lEspiralDeLaCarrega_victimes1936_2018.pdf
 [16]: http://femfum.com/PDF/laDobleEspiralDeLaCarrega.pdf
 [17]: https://github.com/marcantonifemfum/ESCRiBA/blob/master/faTextLaCarrega.ps
+[18]: https://twitter.com/ArtistesDeLaRep
