@@ -7,7 +7,7 @@
 
 #### algorisme `ESCRiBA_cargol_lacarrega.ps`
 
-Aquesta versió del codi deriva d'un experiment de gramàtica generativa (_%%UCarrion @BotCarrion_) i amb l'impuls de la plataforma d'[**#ArtistesDelaRepública**][18] ens afegim a l'acció proposada pel col·lectiu d'Artistes de la Garrotxa, que planteja fer interpretacions del quadre «La Càrrega» d'en *Ramon Casas i Carbó*.
+Aquesta versió del codi deriva d'un experiment de gramàtica generativa (_%%UCarrion @BotCarrion_) i amb l'impuls de la plataforma d'[**#ArtistesDelaRepública**][18] ens afegim a l'acció proposada pel col·lectiu d'**Artistes de la Garrotxa**, que planteja fer interpretacions del quadre «La Càrrega» d'en *Ramon Casas i Carbó*.
 
 L'obra generada duu el títol genèric «**la doble espiral de La Càrrega**»
 
@@ -90,7 +90,7 @@ Al [codi font][13] hi ha descrites i comentades totes les funcionalitats de l'al
 + Podem treballar en doble o + espirals concèntriques i tractar textos compostos en paral·lel
 + El text es compon en la mateixa direcció de com s'ha generat el *cursus*, per la part de dins, caixat a la tibetana
 + Podem reduir progressivament el cos del text a l'acostar-nos al centre de l'espiral per millorar-ne la composició
-+ El text que farceix el cal·ligrama, és xifrat a WinAnsi/latin1 i el generem a partir de l'algorisme [`faTextLaCarrega.ps`][17]
++ El text que farceix el cal·ligrama, és xifrat a WinAnsi/Latin1 i el generem a partir de l'algorisme [`faTextLaCarrega.ps`][17]
 
 **Documentació d'errors, suggeriments i tota mena de col·laboracions, seran benvingudes!**
 
