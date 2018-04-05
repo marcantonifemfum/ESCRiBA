@@ -2,7 +2,7 @@
 
 ### [ca]  El formen un conjunt d'algorismes per fer cal·ligrames: imatges generades tipogràficament
 
-
+  
 #### `ESCRiBA_cargol_lacarrega.ps`
 
 Aquesta versió del codi deriva d'un experiment de gramàtica generativa (_%%UCarrion @BotCarrion_) i amb l'impuls de la plataforma d'**#ArtistesDelaRepública** ens afegim a l'acció proposada pel col·lectiu d'Artistes de la Garrotxa, que planteja fer interpretacions del quadre «La Càrrega» d'en *Ramon Casas i Carbó*.
@@ -12,12 +12,13 @@ L'obra generada duu el títol genèric «**la doble espiral de La Càrrega**»
 Treballarem a partir d'una imatge cedida pel Museu Comarcal de la Garrotxa, que és on es troba exposada l'obra original.
 
 N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, són:
-
+  
+  
 1. `laDobleEspiralDeLaCarrega.pdf`
 
 ![detall del cal·ligrama «la doble espiral de La Càrrega»](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallDobleEspiralDeLaCarrega.png)
 
-   Cal·ligrama de gran complexitat, doncs posa al límit els recursos de la màquina i el visualitzador de PDF que l'obre (p.e. els que utilizen els navegadors d'Internet o l'*AdobeReader*). Desaconsellem obrir-lo en un dispositiu mòbil o dins un navegador. Degut a l'alta densitat de text, composat en una línia corba, les funcions de cerca de paraules d'aplicacions com l'*AdobeReader* es col·lapsen i deixen de funcionar.
+   Cal·ligrama de gran complexitat doncs, actualment, pot posar al límit els recursos de la màquina i del visualitzador de PDF que l'obri (p.e. els que utilizen els navegadors d'Internet o l'*AdobeReader*). Desaconsellem obrir-lo en un dispositiu mòbil o dins un navegador. Degut a l'alta densitat de text, composat en una línia corba, les funcions de cerca de paraules d'aplicacions com l'*AdobeReader* (v.XI) es col·lapsen i deixen de funcionar.
  
    Tipografies utilitzades: *Cinta-Heavy Italic* (per l'espiral de les víctimes) i *WerdetScript Regular* (per l'espiral dels botxins), del tipògraf de Les Borges Blanques, [Josep Patau Bellart][12]
  
@@ -44,22 +45,42 @@ N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, s�
    * [Querella del Fiscal General de l'Estat, José Manuel Maza, contra tot el Govern de la Generalitat][9] (30 d'octubre de 2017)
    * [Requeriment del Fiscal General de l'Estat, José Manuel Maza, contra els 712 alcaldes col·laboradors del Referèndum d'Autodeterminació de l'1 d'octubre de 2017][11] (13 de setembre de 2017)
 
-
+El teniu descarregable [aquí][16] (absteniu-vos de fer-ho amb un mòbil!)
+  
+  
 2. `lEspiralDeLaCarrega_victimes1936-2018.pdf`
 
 ![detall del cal·ligrama escrit amb les víctimes 1936-2018](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallEspiralDeLaCarrega_victimes1936-2018.png)
 
-   Cal·ligrama construït exclusivament amb els recursos textuals de les víctimes, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Menys complex, pot obrir-se en un dispositiu mòbil i no fa un ús tant intensiu dels recursos del visualitzador de PDF. Per exemple, l'*AdobeReader* ja permet fer-hi cerques textuals sense col·lapsar.
-
+   Cal·ligrama construït exclusivament amb els recursos textuals de les víctimes, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Menys complex, pot obrir-se en un dispositiu mòbil i no fa un ús tant intensiu dels recursos del visualitzador de PDF. Per exemple, l'*AdobeReader* ja permet fer-hi cerques textuals sense col·lapsar. Descarregable [aquí][15]
+  
+  
 3. `lEspiralDeLaCarrega_victimes2015-2018.pdf`
 
 ![detall del cal·ligrama escrit amb les víctimes 2015-2018](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallEspiralDeLaCarrega_victimes2015-2018.png)
 
-   Cal·ligrama construït amb els recursos textuals de les darreres víctimes 2015-2018, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Molt lleuger i operatiu.
-
+   Cal·ligrama construït amb els recursos textuals de les darreres víctimes 2015-2018, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Molt lleuger i operatiu. Descarregable [aquí][14]
+  
+  
+---
+  
+  
 #### Ús
 
 Per a intèrprets *PostScript GNU AGPL Ghostscript* multiplataforma, però amb ben pocs retocs, també pot córrer amb l'*Adobe Acrobat Distiller* o amb el *MacOSX PSNormalizer Framework / Apple pstopdf*.
+
+Línia de comanda (Linux/Unix) a *Ghostscript*…
+`gs -q -dNOSAFER -o calligrama.pdf -sDEVICE=pdfwrite -dAutoRotatePages=/None -c .setpdfwrite -f  ESCRiBA_cargol_lacarrega.ps`
+
+Al [codi font][13] hi ha descrites i comentades totes les funcionalitats de l'algorisme. Aquí en fem un petit resum:
++ Reprodueix tipogràficament imatges quadrades en format *JPEG* i en espai de color *RGB*
++ Ens cal entrar manualment l'ample i alt dels píxels d'imatge
++ Juga amb la correspondència: carrer = cos = píxel
++ Treballa directament amb fonts tipogràfiques en format *OTF MM PFB TTF* i també *CID*
++ Duu un pestell que avisa si s'ha esgotat el text (tornant a començar idefinidament)
++ Podem treballar en doble o + espirals concèntriques i tractar textos compostos en paral·lel
++ El text es compon en la mateixa direcció de com s'ha generat el *cursus*, per la part de dins, caixat a la tibetana
++ Podem reduir progressivament el cos del text a l'acostar-nos al centre de l'espiral per millorar-ne la composició
 
 [1]: http://anc.gencat.cat/ca/detall/noticia/La-llista-de-reparacio-juridica-de-victimes-del-franquisme-en-dades-obertes
 [2]: https://github.com/marcantonifemfum/faSantJaume
@@ -73,3 +94,7 @@ Per a intèrprets *PostScript GNU AGPL Ghostscript* multiplataforma, però amb b
 [10]: http://www.poderjudicial.es/stfls/TRIBUNAL%20SUPREMO/DOCUMENTOS%20DE%20INTER%C3%89S/TS%20Penal%20auto%2022%20enero%202018.pdf
 [11]: https://www.elnacional.cat/uploads/s1/25/24/44/6/FGE.-13.09.2017.pdf
 [12]: http://www.tipopepel.com
+[13]: http://
+[14]: http://
+[15]: http://
+[16]: http://
