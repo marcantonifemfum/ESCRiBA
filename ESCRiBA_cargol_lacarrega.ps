@@ -13,8 +13,8 @@
 %#  laDobleEspiralDeLaCarrega.pdf
 %#
 %#  Cal·ligrama de gran complexitat doncs, actualment, pot posar al límit els recursos de la màquina i del visualitzador de PDF
-%#  que l'obri (p.e. els que utilizen els navegadors d'Internet o l'AdobeReader). Desaconsellem obrir-lo en un dispositiu mòbil
-%#  o dins un navegador. Degut a l'alta densitat de text, compost en una línia corba, les funcions de cerca de paraules
+%#  que l'obri (els que utilitzen alguns navegadors d'Internet o l'AdobeReader). Desaconsellem obrir-lo en un dispositiu mòbil
+%#  Degut a l'alta densitat de text, compost en una línia corba, les funcions de cerca de paraules
 %#  d'aplicacions com l'AdobeReader (v. XI) es col·lapsen i deixen de funcionar.
 %# 
 %#  Tipografies utilitzades: Cinta-Heavy Italic (espiral de les víctimes) i WerdetScript Regular (espiral dels botxins),
@@ -85,7 +85,7 @@
 %%% ens cal entrar manualment l'ample i alt dels píxels d'imatge
 %%% juga amb la correspondència: carrer = cos = píxel
 %%% pot treballar directament amb fonts tipogràfiques en format OTF, MM, PFB, TTF i també CID
-%%% duu un pestell que avisa si s'ha esgotat el text (tornant a començar idefinidament)
+%%% duu un pestell que avisa si s'ha esgotat el text (tornant a començar indefinidament)
 %%% podem treballar en doble o + espirals concèntriques i tractar textos compostos en paral·lel
 %%% el text es compon en la mateixa direcció de com s'ha generat el cursus, per la part de dins, caixat a la tibetana
 %%UCarrion
@@ -469,6 +469,7 @@ pathtextdict /setdist get cvi 128 string cvs print flush ( <<< punts recorreguts
 restore
 %% fi del cal·ligrama amb l'espiral de les víctimes
 
+%%+ s'activa només en el cas de la doble espiral de La Càrrega
 false{  %% fem l'espiral dels botxins?
 
 %% fem el cal·ligrama amb l'espiral dels botxins
