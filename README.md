@@ -3,7 +3,7 @@
 ### [ca]  El formen un conjunt d'algorismes per fer cal·ligrames: imatges generades tipogràficament
 
   
-#### `ESCRiBA_cargol_lacarrega.ps`
+#### algorisme `ESCRiBA_cargol_lacarrega.ps`
 
 Aquesta versió del codi deriva d'un experiment de gramàtica generativa (_%%UCarrion @BotCarrion_) i amb l'impuls de la plataforma d'**#ArtistesDelaRepública** ens afegim a l'acció proposada pel col·lectiu d'Artistes de la Garrotxa, que planteja fer interpretacions del quadre «La Càrrega» d'en *Ramon Casas i Carbó*.
 
@@ -13,6 +13,7 @@ Treballarem a partir d'una imatge cedida pel Museu Comarcal de la Garrotxa, que 
 
 N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, són:
   
+---
   
 1. `laDobleEspiralDeLaCarrega.pdf`
 
@@ -45,21 +46,22 @@ N'hem generat tres resultats gràfics que, descrits per ordre de complexitat, s�
    * [Querella del Fiscal General de l'Estat, José Manuel Maza, contra tot el Govern de la Generalitat][9] (30 d'octubre de 2017)
    * [Requeriment del Fiscal General de l'Estat, José Manuel Maza, contra els 712 alcaldes col·laboradors del Referèndum d'Autodeterminació de l'1 d'octubre de 2017][11] (13 de setembre de 2017)
 
-El teniu descarregable [aquí][16] (absteniu-vos de fer-ho amb un mòbil!)
+El teniu descarregable [aquí][16] (60,2MB absteniu-vos de fer-ho amb un mòbil!)
   
+---
   
 2. `lEspiralDeLaCarrega_victimes1936-2018.pdf`
 
 ![detall del cal·ligrama escrit amb les víctimes 1936-2018](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallEspiralDeLaCarrega_victimes1936-2018.png)
 
-   Cal·ligrama construït exclusivament amb els recursos textuals de les víctimes, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Menys complex, pot obrir-se en un dispositiu mòbil i no fa un ús tant intensiu dels recursos del visualitzador de PDF. Per exemple, l'*AdobeReader* ja permet fer-hi cerques textuals sense col·lapsar. Descarregable [aquí][15]
+   Cal·ligrama construït exclusivament amb els recursos textuals de les víctimes, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Menys complex, pot obrir-se en un dispositiu mòbil i no fa un ús tant intensiu dels recursos del visualitzador de PDF. Per exemple, l'*AdobeReader* ja permet fer-hi cerques textuals sense col·lapsar. Descarregable [aquí][15] (29,1MB)
   
   
 3. `lEspiralDeLaCarrega_victimes2015-2018.pdf`
 
 ![detall del cal·ligrama escrit amb les víctimes 2015-2018](https://github.com/marcantonifemfum/ESCRiBA/blob/master/detallEspiralDeLaCarrega_victimes2015-2018.png)
 
-   Cal·ligrama construït amb els recursos textuals de les darreres víctimes 2015-2018, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Molt lleuger i operatiu. Descarregable [aquí][14]
+   Cal·ligrama construït amb els recursos textuals de les darreres víctimes 2015-2018, descrits anteriorment a `laDobleEspiralDeLaCarrega.pdf`, escrits només una vegada. Molt lleuger i operatiu. Descarregable [aquí][14] (451KB)
   
   
 ---
@@ -81,6 +83,7 @@ Al [codi font][13] hi ha descrites i comentades totes les funcionalitats de l'al
 + Podem treballar en doble o + espirals concèntriques i tractar textos compostos en paral·lel
 + El text es compon en la mateixa direcció de com s'ha generat el *cursus*, per la part de dins, caixat a la tibetana
 + Podem reduir progressivament el cos del text a l'acostar-nos al centre de l'espiral per millorar-ne la composició
++ El text que farceix el cal·ligrama, és xifrat a WinAnsi/latin1 i el generem a partir de l'algorisme [`faTextLaCarrega.ps`][17]
 
 [1]: http://anc.gencat.cat/ca/detall/noticia/La-llista-de-reparacio-juridica-de-victimes-del-franquisme-en-dades-obertes
 [2]: https://github.com/marcantonifemfum/faSantJaume
@@ -96,5 +99,6 @@ Al [codi font][13] hi ha descrites i comentades totes les funcionalitats de l'al
 [12]: http://www.tipopepel.com
 [13]: http://
 [14]: http://
-[15]: http://
-[16]: http://
+[15]: http://femfum.com/PDF/lEspiralDeLaCarrega_victimes1936_2018.pdf
+[16]: http://femfum.com/PDF/laDobleEspiralDeLaCarrega.pdf
+[17]: http://
