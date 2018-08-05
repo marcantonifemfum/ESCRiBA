@@ -5,6 +5,30 @@
 ---
 ---
 
+#### algorisme `ESCRiBA_garigot_lacarrega.ps`
+
+Aquesta versió és [una nova implementació][0] de l'algorisme d'ESCRiBA_cargol_lacarrega.ps on qui descriu la imatge és un gargot aleatori. Una proposta gràfica que ha estat escollida per l'[Assemblea d'Artistes de la Garrotxa][20] per bastir l'acció «Sobrecàrregues», això és, una reproducció mural de 5x3,25m del cal·ligrama que s'exposarà durant tot el mes d'agost de 2018 a la façana de l'Ajuntament d'Olot (Garrotxa) com una de les interpretacions del quadre «La Càrrega» d'en Ramon Casas i Carbó, en contra la repressió política dels presos i exiliats catalans per l'1-O.
+
+---
+  
+0. `160718_ApollinaireNOsomniavaAmbGuardiaCivils.pdf`
+
+![detall del cal·ligrama aleatori](https://github.com/marcantonifemfum/ESCRiBA/blob/olot/detallApollinaire.png)
+![fragment del cal·ligrama aleatori](https://github.com/marcantonifemfum/ESCRiBA/blob/olot/detallApollinaire2.png)
+
+   [Cal·ligrama mural a 5000 x 3250 mm][19] L'obra generada duu per títol «Apollinaire no somniava amb Guàrdia Civils» i ha estat induïda per l'activisme que, poc després del referèndum d'autodeterminació de l'1 d'octubre de 2017, s'organitza a través d'#ArtistesDelaRepública. Treballarem a partir d'una imatge cedida pel Museu Comarcal de la Garrotxa, que és on es troba exposada l'obra original. Els textos, a cos 44, que fan la funció dels píxels d'imatge, s'endrecen en una trajectòria vectorial aleatòria de corbes Bézier. El formen, repetits diverses vegades, els recursos següents:
+
+Llistat d'ens i persones represaliades per l'Estat Espanyol, entre 2015 i 2018 a Catalunya, per convocar i participar del dret democràtic de votar en el referèndum d'autodeterminació i creació de la República, l'1 d'octubre de 2017, s'ha fet un buidat manual dels més de 800 noms d'ens i persones de les fonts:
+   * L'informe [El Minotaure del 78][3]
+   * [Inventari de d'anys dels Servidors Públics de Catalunya][4]
+   * L'informe [1-O. Llibertat d'informació a la corda fluixa][5]
+   * [712 alcaldies investigades][6]
+En seguiment de l'actualitat, hi hem anat afegint a la cua els casos més recents d'exili i repressió judicial.
+
+Degut a l'alta densitat de text, les funcions de cerca de paraules, en eines com l'AdobeReader, poden deixar de funcionar.
+
+---
+
 #### algorisme `ESCRiBA_cargol_lacarrega.ps`
 
 Aquesta versió del codi deriva d'un experiment de gramàtica generativa (_%%UCarrion @BotCarrion_) i amb l'impuls de la plataforma d'[**#ArtistesDelaRepública**][18] ens afegim a l'acció proposada pel col·lectiu d'**Artistes de la Garrotxa**, que planteja fer interpretacions del quadre «La Càrrega» d'en *Ramon Casas i Carbó*.
@@ -94,6 +118,7 @@ Al [codi font][13] hi ha descrites i comentades totes les funcionalitats de l'al
 
 **Documentació d'errors, suggeriments i tota mena de col·laboracions, seran benvingudes!**
 
+[0]: https://github.com/marcantonifemfum/ESCRiBA/blob/olot/ESCRiBA_garigot_lacarrega.ps
 [1]: http://anc.gencat.cat/ca/detall/noticia/La-llista-de-reparacio-juridica-de-victimes-del-franquisme-en-dades-obertes
 [2]: https://github.com/marcantonifemfum/faSantJaume
 [3]: http://cup.cat/sites/default/files/el_minotaure_del_78_revisat_alta_mod.pdf
@@ -112,3 +137,5 @@ Al [codi font][13] hi ha descrites i comentades totes les funcionalitats de l'al
 [16]: http://femfum.com/PDF/laDobleEspiralDeLaCarrega.pdf
 [17]: https://github.com/marcantonifemfum/ESCRiBA/blob/master/faTextLaCarrega.ps
 [18]: https://twitter.com/ArtistesDeLaRep
+[19]: https://github.com/marcantonifemfum/ESCRiBA/raw/olot/160718_ApollinaireNOsomniavaAmbGuardiaCivils.pdf
+[20]: https://www.facebook.com/Assemblea-dArtistes-de-la-Garrotxa-177870789523944/
